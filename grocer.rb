@@ -112,6 +112,7 @@ def checkout(cart, coupons)
   while x < cart_with_discounts_applied.length do 
       item_qty_times_price = cart_with_discounts_applied[x][:price] * cart_with_discounts_applied[x][:count]
       grand_total += item_qty_times_price
+       x += 1 
     end 
     x += 1 
   end 
