@@ -58,6 +58,8 @@ def apply_coupons(cart, coupons)
     
   
     if item_with_coupon && item_with_coupon[:count] >= coupons[x][:num]
+       if cart_item_with_coupon 
+         
        item_with_coupon[:clearance] = true 
        
   
