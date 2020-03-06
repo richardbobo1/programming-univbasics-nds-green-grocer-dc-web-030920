@@ -85,6 +85,7 @@ end
 
 def apply_clearance(cart)
   
+  new_array = []
   
   # Consult README for inputs and outputs
   #
