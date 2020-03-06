@@ -49,7 +49,7 @@ end
 def apply_coupons(cart, coupons)
 
   x = 0 
-  while x < coupons.length 
+  while x < coupons.length do 
     cart_item = find_item_by_name_in_collection(coupons[x][:item], cart)
     couponed_item_name = "#{coupons[x][:item]} W/COUPON"
     cart_item_with_coupon = find_item_by_name_in_collection(couponed_item_name, cart) 
