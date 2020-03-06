@@ -60,11 +60,10 @@ def apply_coupons(cart, coupons)
     if item_with_coupon && item_with_coupon[:count] >= coupons[x][:num]
        if cart_item_with_coupon 
          cart_item_with_coupon[:count] += coupons[counter][:num]
-         
-       item_with_coupon[:clearance] = true 
+          cart[counter][:count] - coupons[counter][:num]
+         item_with_coupon[:clearance] = true 
        
   
-         cart[i][:count] - coupons[x][:num]
     
        price_per_item = coupons[counter][:cost] / coupons[counter][:num]
     else    
