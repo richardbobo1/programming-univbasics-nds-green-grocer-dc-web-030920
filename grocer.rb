@@ -87,6 +87,10 @@ def apply_clearance(cart)
   
   new_array = []
   
+  if cart[x][:clearance] = true 
+    cart[x][:price] = cart[x][:price] ** 0.80
+    cart[x][:price].round(2) 
+  
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
