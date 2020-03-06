@@ -91,8 +91,6 @@ def apply_clearance(cart)
          cart[x][:price] = cart[x][:price]*0.80
           cart[x][:price].round(2) 
        else 
-        nil 
-      end 
        x += 1 
     end 
   cart 
