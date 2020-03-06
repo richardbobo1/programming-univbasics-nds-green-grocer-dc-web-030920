@@ -73,7 +73,7 @@ def apply_coupons(cart, coupons)
       
       end
     end
-    counter += 1 
+    x += 1 
   end 
   cart 
 end 
