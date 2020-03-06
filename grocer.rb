@@ -114,9 +114,9 @@ def checkout(cart, coupons)
       grand_total += item_qty_times_price
        x += 1 
     end 
-    x += 1 
+   grand_total
   end 
-  grand_total
+  
   
   
   # Consult README for inputs and outputs
