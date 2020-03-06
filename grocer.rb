@@ -72,10 +72,12 @@ def apply_coupons(cart, coupons)
       :count => coupons[i][:num] 
     }
  
+      cart << item_with_coupon
+      
     else    
  
     
-    cart << item_with_coupon
+   
    
   
   #consolidate_cart(cart)
