@@ -77,18 +77,12 @@ def apply_coupons(cart, coupons)
       
       end
     end
-    
+    counter += 1 
+  end 
+  cart 
+end 
 
  
-    
-   
-   
-  
-  #consolidate_cart(cart)
-
-
-  # REMEMBER: This method **should** update cart
-end
 
 
 
