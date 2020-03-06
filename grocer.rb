@@ -57,10 +57,10 @@ def apply_coupons(cart, coupons)
     cart_item_with_coupon = find_item_by_name_in_collection[coupon_item_name, cart] 
     
   
-    if item_with_coupon != nil 
+    if item_with_coupon && cart[i][:count] >= coupons[x][:num]
        item_with_coupon[:clearance] = true 
        
-       if cart[i][:count] >= coupons[x][:num]
+  
          cart[i][:count] - coupons[x][:num]
     
        price_per_item = coupons[counter][:cost] / coupons[counter][:num]
